@@ -22,10 +22,15 @@ class Album
     @id = result[0]['id'].to_i
   end
 
-  def Album.all
+  def Album.show_all
     sql = "SELECT * FROM albums"
     result = SqlRunner.run(sql)
     result.map {|album| Album.new(album)}
+  end
+
+  def Album.delete_all
+    sql = "DELETE FROM albums"
+    SqlRunner.run(sql)
   end
 
 end
