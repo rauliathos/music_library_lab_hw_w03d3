@@ -9,6 +9,7 @@ album1 = Album.new({'title' => 'All eyez on me',
       'genre' => 'rap', 'artist_id' => artist1.id})
 album1.save
 
+p Artist.all
 
-binding.pry
+# binding.pry
 nil
