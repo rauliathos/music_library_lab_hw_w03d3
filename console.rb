@@ -12,8 +12,14 @@ album1 = Album.new({'title' => 'All eyez on me',
       'genre' => 'rap', 'artist_id' => artist1.id})
 album1.save
 
-p Artist.show_all
+album2 = Album.new({'title' => 'R U Still Down',
+      'genre' => 'rap', 'artist_id' => artist1.id})
+album2.save
 
-p Album.show_all
+p artist1.albums
+
+# p Artist.show_all
+#
+# p Album.show_all
 # binding.pry
 nil
