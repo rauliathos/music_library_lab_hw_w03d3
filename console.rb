@@ -15,8 +15,10 @@ album1.save
 album2 = Album.new({'title' => 'R U Still Down',
       'genre' => 'rap', 'artist_id' => artist1.id})
 album2.save
+#
+# p artist1.albums
 
-p artist1.albums
+p album2.artist
 
 # p Artist.show_all
 #
