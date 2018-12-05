@@ -7,4 +7,6 @@ class Album
     @genre = options['genre']
     @artist_id = options['artist_id'].to_i
   end
+
+
 end
